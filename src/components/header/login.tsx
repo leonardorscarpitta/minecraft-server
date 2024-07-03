@@ -5,7 +5,7 @@ export default function Login() {
     <div>
       <button>
         <Image src="https://img.icons8.com/plasticine/256/minecraft-optifine.png"
-        width={30} height={30} alt="Logo da aba de login" quality={100} />
+        width={30} height={30} alt="Logo da aba de login" />
         <p>Login</p>
       </button>
     </div>

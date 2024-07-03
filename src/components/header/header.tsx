@@ -6,7 +6,7 @@ import "./header.modules.scss"
 export default function Header() {
   return (
     <header>
-      <Image
+      <Image className="header-img"
       src="https://img.icons8.com/doodle/128/minecraft-grass-cube.png"
       alt="Logo do servidor"
       width={60}
@@ -17,9 +17,9 @@ export default function Header() {
         <ul>
           <HeaderItems pageName="Home"/>
           <HeaderItems pageName="Loja"/>
-          <HeaderItems pageName="Parceiros"/>
-          <HeaderItems pageName="Servidores"/>
-          <HeaderItems pageName="Fórum"/>
+          <HeaderItems pageName="Redes Sociais"/>
+          <HeaderItems pageName="Pacerias"/>
+          <HeaderItems pageName="IP"/>
         </ul>
       </nav>
 
