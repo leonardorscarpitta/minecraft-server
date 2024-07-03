@@ -1,7 +1,12 @@
+import Header from "@/components/header/header";
+import Main from "@/components/main/main";
+import "./page.module.css"
+
 export default function Home() {
   return (
-    <div>
-      <h1>Hey !</h1>
+    <div className="page">
+      <Header />
+      <Main />
     </div>
   );
 }
