@@ -1,3 +1,7 @@
+* {
+  transition: all .4s;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -5,12 +9,6 @@ html {
 body {
   max-height: 100vh;
   background-color: #1A1A1A;
-}
-
-.page {
-  display: grid;
-  row-gap: 2rem;
-  grid-template-columns: 1fr 8fr 1fr;
 }
 
 header {
@@ -21,4 +19,36 @@ header {
 main {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+}
+
+.page {
+  display: grid;
+  row-gap: 2rem;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+
+.underline { 
+  color: white;
+  cursor: pointer;
+}
+
+.underline:after {
+  display: block;
+  padding-bottom: 0.5rem;
+  content: '';
+  border-bottom: solid 3px #FFC376;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in;
+}
+
+.underline:hover:after { 
+  transform: scaleX(1); 
+}
+
+.underline.fromRight:after{ 
+  transform-origin: 100% 50%; 
+}
+
+.underline.fromLeft:after { 
+  transform-origin:  0% 50%; 
 }

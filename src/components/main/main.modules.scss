@@ -1,10 +1,12 @@
 main {
+  grid-area: 2 / 2 / 3 / 3;
   display: grid;
   justify-content: center;
-  row-gap: 2rem;
+  row-gap: 3rem;
 
   .cards {
     display: flex;
+    justify-content: space-between;
     column-gap: 2rem;
   }
 
@@ -12,5 +14,24 @@ main {
     color: white;
     font-weight: bold;
     font-size: 2rem;
+    justify-self: left;
+  }
+
+  .faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+
+    summary {
+      cursor: pointer;
+      justify-self: left;
+    }
+
+    summary:hover {
+      opacity: 0.8;
+    }
+
   }
 }

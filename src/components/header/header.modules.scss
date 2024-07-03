@@ -1,44 +1,44 @@
 header {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: url("../../../public/bg-h.webp") no-repeat fixed;
+  background-size: 100%;
+
+    .header-img:hover {
+      cursor: pointer;
+      transform: scale(1.3);
+    }
 
     ul {
       display: flex;
       gap: 2rem;
     }
 
-      a {
-        color: var(--default-color);
+      a,
+      button {
         color: white;
         padding: 0.75rem;
-        border-radius: 5px;
         font-weight: bold;
         font-size: 1rem;
-        transition: all .4s;
-      }
-
-      a:hover,
-      button:hover {
-        background-color: #151F35;
       }
 
       button {
         display: flex;
         align-items: center;
-        color: var(--default-color);
         padding: 0.5rem 0.8rem;
         font-size: 1rem;
         border-radius: 5px;
         border: none;
         color: white;
-        font-weight: bold;
-        transition: all .4s;
         background: #233458 no-repeat;
-        background-position: left center;
-        background-repeat: no-repeat;
         cursor: pointer;
+      }
+
+      a:hover,
+      button:hover {
+        border-radius: 8px;
+        background-color: #FFC376;
+        color: black;
       }
 }
