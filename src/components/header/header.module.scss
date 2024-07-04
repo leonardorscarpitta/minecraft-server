@@ -1,8 +1,11 @@
 .header {
+  top: 0px;
+  position: sticky;
   padding: 1rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #1A1A1A;
 
     .itemsList {
       display: flex;
