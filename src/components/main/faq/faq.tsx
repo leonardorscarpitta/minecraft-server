@@ -1,4 +1,5 @@
-import "./faq.modules.scss"
+import "./faq.module.scss"
+import styles from "./faq.module.scss"
 
 interface FaqProps {
   question: string,
@@ -7,9 +8,9 @@ interface FaqProps {
 
 export default function Faq(props : FaqProps) {
   return (
-    <details>
-      <summary>{props.question}</summary>
-      <p>{props.answer}</p>
+    <details className={styles.details}>
+      <summary className={styles.question}>{props.question}</summary>
+      <p className={styles.answer}>{props.answer}</p>
     </details>
   )
 }

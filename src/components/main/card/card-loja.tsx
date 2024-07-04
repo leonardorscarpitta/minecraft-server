@@ -1,5 +1,5 @@
 import { ImgHTMLAttributes } from "react"
-import "./card-loja.modules.scss"
+import styles from "./card-loja.module.scss"
 import Image from "next/image"
 
 interface CardLojaProps {
@@ -10,7 +10,7 @@ interface CardLojaProps {
 
 export default function CardLoja(props: CardLojaProps) {
   return (
-    <div className="itemLoja">
+    <div className={styles.itemLoja}>
       <p>{props.text}</p>
       <Image
       className="item-pic"
