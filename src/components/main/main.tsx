@@ -20,10 +20,10 @@ export default function Main() {
 
         <section className={styles.faq}>
           <h2 className="underline">Perguntas Frequentes</h2>
-          <Faq question="Lorem" answer="Lorem Lorem Lorem Lorem Lorem" />
-          <Faq question="Lorem" answer="Lorem Lorem Lorem Lorem Lorem" />
-          <Faq question="Lorem" answer="Lorem Lorem Lorem Lorem Lorem" />
-          <Faq question="Lorem" answer="Lorem Lorem Lorem Lorem Lorem" />
+          <Faq question="1. Como eu compro VIP?" answer="Lorem" />
+          <Faq question="2. Como eu entro no servidor?" answer="Lorem" />
+          <Faq question="3. Como eu ajudo o servidor?" answer="Lorem" />
+          <Faq question="4. Como eu faço algo?" answer="Lorem" />
         </section>
       </main>
   )
