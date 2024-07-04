@@ -7,8 +7,10 @@ html {
 }
 
 body {
-  max-height: 100vh;
-  background-color: #1A1A1A;
+  height: 100vh;
+  background: url("https://wallpapers.com/images/hd/beautiful-minecraft-forest-with-sun-qcptbp53t8l4phja.jpg") no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 header {
@@ -21,9 +23,13 @@ main {
   grid-row: 2 / 3;
 }
 
+footer {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
 .page {
   display: grid;
-  row-gap: 2rem;
   grid-template-columns: 1fr 8fr 1fr;
 }
 
